@@ -84,7 +84,7 @@
                                                 <div class="nk-kycfm-count">01</div>
                                                 <div class="nk-kycfm-title">
                                                     <h5 class="title">Personal Details</h5>
-                                                    <p class="sub-title">Your simple personal information required for identification</p>
+                                                    <p class="sub-title">Your personal information required for identification</p>
                                                 </div>
                                             </div><!-- nk-kycfm-head -->
                                             <div class="nk-kycfm-content">
@@ -94,33 +94,24 @@
                                 <form method="POST" action="{{route('dashb_profile_save')}}" enctype="multipart/form-data">
                                     @csrf
                                                 <div class="row g-4">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-12">
                                                         <div class="form-group">
                                                             <div class="form-label-group">
-                                                                <label class="form-label">First Name <span class="text-danger">*</span></label>
+                                                                <label class="form-label">Full Name <span class="text-danger">*</span></label>
                                                             </div>
                                                             <div class="form-control-group">
-                                                                <input type="text" class="form-control form-control-lg" readonly=""  name="name" value="{{Auth::user()->name}}" fdprocessedid="5ma2v">
+                                                                <input type="text" class="form-control form-control-lg"  name="name" value="{{Auth::user()->name}}" fdprocessedid="5ma2v">
                                                             </div>
                                                         </div>
                                                     </div><!-- .col -->
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <div class="form-label-group">
-                                                                <label class="form-label">Last Name <span class="text-danger">*</span></label>
-                                                            </div>
-                                                            <div class="form-control-group">
-                                                                <input type="text" class="form-control form-control-lg" value="doe" readonly="" fdprocessedid="3z3uuk">
-                                                            </div>
-                                                        </div>
-                                                    </div><!-- .col -->
+                                                
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <div class="form-label-group">
                                                                 <label class="form-label">Email Address <span class="text-danger">*</span></label>
                                                             </div>
                                                             <div class="form-control-group">
-                                                                <input type="text" class="form-control form-control-lg" name="email" type="email" value="{{Auth::user()->email}}" readonly="" fdprocessedid="v3kinr">
+                                                                <input type="text" class="form-control form-control-lg" name="email" type="email" value="{{Auth::user()->email}}" fdprocessedid="v3kinr">
                                                             </div>
                                                         </div>
                                                     </div><!-- .col -->
@@ -130,7 +121,7 @@
                                                                 <label class="form-label">Phone Number <span class="text-danger">*</span></label>
                                                             </div>
                                                             <div class="form-control-group">
-                                                                <input type="text" class="form-control form-control-lg" name="phone" value="{{Auth::user()->phone}}" readonly="" fdprocessedid="7g39mg">
+                                                                <input type="text" class="form-control form-control-lg" name="phone" value="{{Auth::user()->phone}}" fdprocessedid="7g39mg">
                                                             </div>
                                                         </div>
                                                     </div><!-- .col -->
@@ -177,7 +168,7 @@
                                                             </div>
                                                             <div class="form-control-group">
                                                                 
-                                                <input type="text" class="form-control form-control-lg" name="homeAddress" required="" fdprocessedid="f983ln">                                                            </div>
+                                                <input type="text" class="form-control form-control-lg" name="address" required="" value="{{Auth::user()->address}}">                                                            </div>
                                                         </div>
                                                     </div><!-- .col -->
                                                     
@@ -188,40 +179,30 @@
                                                             </div>
                                                             <div class="form-control-group">
                                                                 
-                                            <input type="text" class="form-control form-control-lg" name="userZip" required="" fdprocessedid="ka7ri6">                                                            </div>
+                                            <input type="text" class="form-control form-control-lg" name="postal_code" required="" value="{{Auth::user()->post_code}}">                                                            </div>
                                                         </div>
                                                     </div><!-- .col -->
                                                     
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <div class="form-label-group">
-                                                                <label class="form-label">City <span class="text-danger">*</span></label>
-                                                            </div>
-                                                            <div class="form-control-group">
-                                                               
-                                                 <input type="text" class="form-control form-control-lg" name="userCity" required="" fdprocessedid="yamqnm">                                                            </div>
-                                                        </div>
-                                                    </div><!-- .col -->
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <div class="form-label-group">
                                                                 <label class="form-label">State <span class="text-danger">*</span></label>
                                                             </div>
                                                             <div class="form-control-group">
-                                                                
-                                             <input type="text" class="form-control form-control-lg" name="userState" required="" fdprocessedid="3zpp1">                                                            </div>
+                                                               
+                                                 <input type="text" class="form-control form-control-lg" name="city" required="" value="{{Auth::user()->city}}">                                                            </div>
                                                         </div>
                                                     </div><!-- .col -->
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <div class="form-label-group">
-                                                                <label class="form-label">Nationality <span class="text-danger">*</span></label>
+                                                                <label class="form-label">Country <span class="text-danger">*</span></label>
                                                             </div>
                                                             <div class="form-control-group">
                                                                 
-                                             <input type="text" class="form-control form-control-lg" name="userNationality" required="" fdprocessedid="v4ho7">                                                            </div>
+                                             <input type="text" class="form-control form-control-lg" name="state" required="" value="{{Auth::user()->state}}">                                                            </div>
                                                         </div>
-                                                    </div><!-- .col -->
+                                                    </div>
                                                     
                                                 </div><!-- .row -->
                                             </div><!-- nk-kycfm-content -->

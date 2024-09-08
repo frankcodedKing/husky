@@ -120,19 +120,10 @@
 
         <!--header section start-->
         
-        <div class="pietext">
-            Investment analysis and insight
-        </div>
+<!--        <div class="pietext">-->
+<!--Portfolio and investment analysis        </div>-->
         <section class="piecharm">
-            <div class="x-box"></div>
-            <div class="x-box-cont">
-              
-                <figure style="display: flex; align-items:center;"> <div style="width:30px; height:30px; background:#7c9481;"></div> <strong style="color: #7c9481;">Cryptocurrency 41%</strong></figure>
-                <figure style="display: flex; align-items:center;"><div style="width:30px; height:30px; background:#c7be76;"></div>  <strong style="color: #c7be76;">forex 20%</strong></figure>
-                <figure style="display: flex; align-items:center;"><div style="width:30px; height:30px; background:#8f827e;"></div>  <strong style="color: #8f827e">stocks 15%</strong></figure>
-                <figure style="display: flex; align-items:center;"><div style="width:30px; height:30px; background:#8bbcb9;"></div> <strong style="color: #8bbcb9;">real estate 16%</strong></figure>
-                <figure style="display: flex; align-items:center;"> <div style="width:30px; height:30px; background:#006344;"></div> <strong style="color: #006344 ;">cannabis 8%</strong></figure>
-            </div>
+            
         </section>
         {{-- <div class="piecharm-text">
             <h2>estimated returns per month</h2>
@@ -145,34 +136,30 @@
         <section class="section-padding about-us-page">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-8">
                         <p>
-                            {{ $compd ? $compd->companyname : 'company name' }} makes it possible for you to achieve your
-                            financial purpose in life and live the lifestyle you’ve always craved for. By investing in Real
-                            Estate, Forex, Crypto Currency, Stocks, and Cannabis, we guarantee our clients substantial
-                            monthly profit for two years. We are a purpose-driven company, bound together by our commitment
-                            to what we do and how we work together. We come to this business from many different
-                            perspectives, but we all hold common values that we bring to our work. We are constantly engaged
-                            in research and development. This is a necessity in the world of relentlessly changing global
-                            financial markets. By utilizing our group of experts in all aspect of investment, we can
-                            carefully identify investment opportunities that can generate maximum profit for our client over
-                            a long period. Our team of licensed fiduciary advisors understands that every investor is
-                            unique. With the dynamic tools used by both you and your financial advisor, we are able to
-                            identify and alert you to opportunities so you can act on them. </p>
+                            Aspen Financial Management empowers you to realize your financial aspirations and attain the lifestyle you've always desired. Through strategic investments in Real Estate, Forex, Cryptocurrency, Stocks, Commodities, Rare metals, and Cannabis, we assure our clients significant monthly returns over a two-year period. Committed to a purpose-driven approach, our cohesive team shares common values that underpin our dedication to excellence. We continuously engage in research and development to navigate the dynamic landscape of global financial markets.</p>
                         <p>
-                            After a client has successfully registered, verified and made a deposit into his or her account,
-                            we carefully allocate the funds and analyze the markets, define the most attractive asset
-                            categories and then select which assets to add to your portfolio, such as cryptocurrencies,
-                            stocks, REITs, cannabis or others. Over time, the client portfolio changes according to our
-                            vision of the market. In this way we can protect ourselves from market fluctuations and
-                            volatility. </p>
+                           Our seasoned group of experts covers all facets of investment, allowing us to meticulously identify opportunities with the potential for maximum long-term profitability. Recognizing the uniqueness of each investor, our team of licensed fiduciary advisors, in collaboration with dynamic tools, pinpoints and communicates opportunities for timely action. </p>
 
-                        <p>
-                            The goal of portfolio management is to maximize profits, but also minimize risks. It's a
-                            balancing act to get the return investor's need without taking undue risk. This is accomplished
-                            through careful analysis of asset allocation, diversification, and regularly scheduled
-                            rebalancing in some portfolio management styles. </p>
                     </div>
+                    
+                    <div class="col-md-4">
+                        <div class="member-img">
+            <video controls="" id="vidmate" autoplay muted loop style="max-width: 100%; height: auto;">
+                <source src="https://aspenfinancialmanagement.com/assets/images/ASPEN FINANCIAL MANAGEMENT.mp4" type="video/mp4">
+            </video>
+        </div>
+                    </div>
+                    
+                    
+                        <p>
+                            Upon successful registration, verification, and deposit into a client's account, we meticulously allocate funds, analyze markets, and determine the most attractive asset categories. Our selection of assets, including cryptocurrencies, foreign currencies, stocks, commodities, rare metals, REITs, and cannabis, evolves over time in alignment with our market analysis and vision. This dynamic approach shields against market fluctuations and volatility.
+</p>
+
+<p>
+    Our portfolio management service is geared towards maximizing profits while minimizing risks, which involves a delicate balance. Through rigorous analysis of asset allocation, diversification, and regular rebalancing, we strive to achieve the desired returns without exposing investors to undue risk. This proactive strategy ensures our clients' financial well-being in the ever-changing landscape of investment opportunities.
+</p>
                 </div>
 
 
@@ -185,7 +172,7 @@
                                         src="assets/images/CRYPT.jpg">
                                 </a>
                             </div>
-                            <div class="card-body ">
+                            <div class="card-body">
                                 <br>
                                 <a href="{{ route('crypto') }}" class="btn btn-dark">Read more</a>
                             </div>
@@ -268,8 +255,8 @@
                         <div class="card card-profile text-center"style="margin:10px;">
                             <div class="card-header card-avatar">
                                 <a href="specialtrades">
-                                    <img class="img" style="border: 2px solid white;width:100%; "
-                                        src="assets/images/spetrades.jpg">
+                                    <img class="img" style="border: 2px solid white;width:80%; "
+                                        src="assets/images/comm.png">
                                 </a>
                             </div>
                             <div class="card-body">

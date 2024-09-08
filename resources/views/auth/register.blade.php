@@ -14,18 +14,18 @@
          <!-- col1 -->
 
          
-         <div class="col-xl-6 d-flex align-items-stretch" style="margin-top: 25px;">
+         <div class="col-xl-6 d-flex align-items-stretch" style="margin-top: 60px;">
            <div class="icon-boxes d-flex flex-column justify-content-center">
              <div class="row">
                <h4>Create an account
                  </h4>
-                 <p>Provide essential details to get started with an Aspen-fm account.</p>
+                 <p>Provide essential details to get started with an Account! </p>
                  <form method="POST" action="{{ route('register') }}">
                    @csrf
 
                     <div class="form-group">
                      <!-- <label for="exampleInputEmail1">Username</label> -->
-                     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username" placeholder="Enter username">
+                     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username" placeholder="Enter Firstname">
                      
                    </div>
                    <br>
@@ -34,7 +34,7 @@
                      <!-- <label for="exampleInputEmail1">Name</label> -->
                      <input id="name" class="form-control"  type="text"
                      class="form-control @error('name') is-invalid @enderror" name="name"
-                     placeholder="Enter Name" value="{{ old('name') }}" required
+                     placeholder="Enter Lastname" value="{{ old('name') }}" required
                      autocomplete="name">
                  @error('name')
                      <span class="invalid-feedback" role="alert">
@@ -94,24 +94,15 @@
                          echo $_GET['refid'];
                      }
                  @endphp"
-                         placeholder="Referral ID" />
+                         placeholder="Referral ID (Optional)" />
                    </div>
 
                    <br>
-
-                   <div class="form-group">
-                     <label for="exampleInputEmail1">Account Type</label>
-                     <br>
-                     <select id="account" class="form-control" name="account">
-                         <option value="individual">Individual</option>
-                         <option value="joint">Joint</option>
-                        
-                     </select><br><br>
-                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                   </div>
                    
-<br>
-                   <button type="submit" class="btn btn-success btn-lg" style="width: 50%;">
+                   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                   
+<br><br>
+                   <button type="submit" class="btn btn-success btn-lg" style="width: 50%; background-color: #024139;">
                     Sign up
                    </button>
                  </form>
@@ -130,9 +121,9 @@
 
              <div class="nk-feature-img">
              
-               <img class="round" src="{{asset('assets/fronto/assets/img/undraw.svg')}}"  alt="" style="width: 50%;">
+               <img class="round" src="{{asset('assets/fronto/assets/img/IMG_0254.JPG')}}"  alt="" style="width: 100%;">
            </div>
-           <br><br><br>
+           <br>
 
               <p>
               Or Already have an account 

@@ -121,7 +121,7 @@
                                                 <tr  style='text-align:center';>
                                                     <th class="border-0 rounded-start">#</th>
                                                     <th class="border-0">Amount</th>
-                                                    <th class="border-0">Deposit Date</th>
+                                                    <th class="border-0">Withdrawal Date</th>
                                                     <th class="border-0">Method</th>
                                                     <th class="border-0">Address</th>
                                                     <th class="border-0">Status</th>
@@ -138,7 +138,7 @@
                                                     
                                                     <td class="text-dark">$ {{$withdrawal->amount}}</td>
                                                     <td class="text-dark">{{Carbon\Carbon::parse($withdrawal->created_at)->diffForHumans()}}</td>
-                                                    <td class="text-dark">{{$withdrawal->method =='Btc'?'Bitcoin': ""}} {{$withdrawal->method =='eth'?'Ethereum': "" }} {{$withdrawal->method =='USDT'?'USDT ': ""}} {{$withdrawal->method =='BTC'?'Bitcoin ': ""}} {{$withdrawal->method =='ETH'?'Ethereum ': ""}}</td>
+                                                    <td class="text-dark">{{$withdrawal->method =='Btc'?'Bitcoin': ""}} {{$withdrawal->method =='Eth'?'Ethereum': "" }} {{$withdrawal->method =='USDT'?'USDT ': ""}} {{$withdrawal->method =='BTC'?'Bitcoin ': ""}} {{$withdrawal->method =='ETH'?'Ethereum ': ""}}</td>
                                                     <td class="text-dark">{{$withdrawal->methodaccount}}
                                                         <td class="text-dark"> {!! $withdrawal->status > 0? "<span class='fw-bold'>Completed</span></td>": "<span class='fw-bold'>Pending</span></td>" !!}</td>
 
@@ -185,7 +185,7 @@
                                                     <th class="border-0 rounded-start">#</th>
                                                     <th class="border-0">Amount</th>
                                                     <th class="border-0">Date</th>
-                                                    <th class="border-0">from</th>
+                                                    <th class="border-0">From</th>
                                                     
                                                 </tr>
                                             </thead>

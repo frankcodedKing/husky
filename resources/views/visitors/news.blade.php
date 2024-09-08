@@ -1,35 +1,63 @@
-@extends('layouts.spacedcustomlayout')
-<style>
-    .widget2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
+@extends("layouts.customlayout")
+
+@section("body")
+
+
+
+<div class="main-content">
     
-        margin-bottom: 40px
-    }
-</style>
+    <!-- ======= Breadcrumbs ======= -->
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
 
-@section('body')
-    <div class="main-content">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li>Latest News</li>
+        </ol>
+        <h2>Latest News</h2>
 
-        <!--header section start-->
-        <section class="breadcrumb-section" style="background-image: url('assets/images/news.jpg')">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <!-- breadcrumb Section Start -->
-                        <div class="breadcrumb-content">
-                            <h5>BUSINESS AND STOCKS</h5>
-                        </div>
-                        <!-- Breadcrumb section End -->
-                    </div>
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+<!--assets/images/news.jpg-->
+
+    <!--about us page content start-->
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    
+                    
+
+<script type="text/javascript">DukascopyApplet = {"type":"online_news","params":{"header":false,"borders":"#000000","defaultLanguage":"en","availableLanguages":["ar","bg","cs","de","en","es","fa","fr","he","hu","it","ja","ms","pl","pt","ro","ru","sk","sv","th","uk","zh"],"newsCategories":["finance","forex","stocks","commodities"],"width":"100%","height":"1000px","adv":"popup"}};</script><script type="text/javascript" src="https://freeserv-static.dukascopy.com/2.0/core.js"></script>
+
+                    
+                    
+                    
                 </div>
             </div>
-        </section>
-        <div class="widget2">
-            <iframe width="100%" scrolling="yes" allowtransparency="true" frameborder="0" src="https://cryptopanic.com/widgets/news/?bg_color=FFFFFF&amp;font_family=sans&amp;header_bg_color=30343B&amp;header_text_color=FFFFFF&amp;link_color=0091C2&amp;news_feed=recent&amp;text_color=333333&amp;title=Latest%20News" height="350px"></iframe>
+            
+            
+
+
+    </div>
+    </div>
+    <!--cheked-->
+    
+  </div>
+
         </div>
-        <div class="clearfix"></div>
-        
-    @endsection
+    </section>
+   
+</div>
+
+<!-- Online Section End -->
+
+<!--<div class="clearfix"></div>-->
+
+
+@endsection
+
+
+

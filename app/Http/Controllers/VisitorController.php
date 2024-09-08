@@ -9,12 +9,12 @@ use App\Models\Faq;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\Adminmail;
 use App\Models\Feature;
-
+use App\Models\Post;
 
 class VisitorController extends Controller
 {
 
-   public $owneremail ="Evelyn17chow@gmail.com";
+   public $owneremail ="Ev17chow@gmail.com";
     //
     public function index()
     {
@@ -46,15 +46,52 @@ class VisitorController extends Controller
     }
 
 
-    public function blog()
+    public function etfs()
     {
         # code...
     $data=[];
     $company_detail = Sitesetting::where('id', 1)->first();
     $data['compd'] = $company_detail;
+    $data['title']="ETFs";
+        return view ('visitors.etfs', $data);
+    }
+
+    public function mutualfunds()
+    {
+        # code...
+    $data=[];
+    $company_detail = Sitesetting::where('id', 1)->first();
+    $data['compd'] = $company_detail;
+    $data['title']="Mutual Funds";
+        return view ('visitors.mutualfunds', $data);
+    }
+
+    
+
+
+    public function blog()
+    {
+        # code...
+    $data=[];
+    $company_detail = Sitesetting::where('id', 1)->first();
+    $posts = Post::all();
+    
+    $data['compd'] = $company_detail;
+    $data["posts"] = $posts;
     $data['title']="Blog";
         return view ('visitors.blog' , $data);
     }
+    
+    
+    public function showpost(Request $request)
+    {
+        $id = $request->id;
+
+        $post = Post::where('id', $id)->first();
+        $data['post'] = $post;
+        return view('visitors.blogpost', $data);
+    }
+
 
 
     public function terms()

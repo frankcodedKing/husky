@@ -91,47 +91,125 @@
                                                 <!-- .col -->
                                                 <div class="col-md-8">
                                                         <div class="form-group">
-                                                            <div class="form-label-group">
-                                                                <label class="form-label">To avoid delays when verifying account, Please make sure to <span class="text-danger">*</span></label>
-                                                                
-                                                            </div>
-                                                            <ul>
-                                                                <li class="li" style="font-size: 15px;" >1. Chosen credential must not be expired</li>
-                                                                <li class="li" style="font-size: 15px;">2. Document should be in good condition and visible</li>
-                                                                <li class="li" style="font-size: 15px;">3. Make sure there is no light glare on the card</li>
-                                                                </ul>
+                                                          
+                                                            
                                                             <div class="form-control-group">
-                                                                
-                                                        <input type="file" class="form-control form-control-lg" name="kyc_file" required> 
-                                                        
+                                                       
                                                         </div>
                                                         </div>
                                                     </div><!-- .col -->
 
-                                                    <div class="nk-kycfm-footer">
-                                                
-                                                
-                                                <div class="nk-kycfm-action pt-2">
-                                             <button type="submit" class="btn btn-lg btn-success" fdprocessedid="r6yfdi">Upload</button>                                                   
-                                                </div>
-                                            </div><!-- nk-kycfm-footer -->
-
+                                                    
                                                    
 
-                                                
-                                            </form>
-
                                            
+                                            
+                                            <div class="nk-kycfm-content">
+                                                <div class="nk-kycfm-note">
+                                                    <em class="icon ni ni-info-fill" data-toggle="tooltip" data-placement="right" title="" data-original-title="Tooltip on right"></em>
+                                                    <p>In order to complete, please upload any of the following personal document.</p>
+                                                </div>
+                                                <ul class="nk-kycfm-control-list g-3">
+                                                    <li class="nk-kycfm-control-item">
+                                                        <input class="nk-kycfm-control" type="radio" name="id-proof" id="passport" data-title="Passport" checked="" value="passport">
+                                                        <label class="nk-kycfm-label" for="passport">
+                                                            <span class="nk-kycfm-label-icon">
+                                                                <span class="label-icon">
+                                                                  
+                                                                </span>
+                                                            </span>
+                                                            <span class="nk-kycfm-label-text">Passport</span>
+                                                        </label>
+                                                    </li><!-- .nk-kycfm-control-item -->
+                                                    <li class="nk-kycfm-control-item">
+                                                        <input class="nk-kycfm-control" type="radio" name="id-proof" id="national-id" data-title="National ID" value="nid">
+                                                        <label class="nk-kycfm-label" for="national-id">
+                                                            <span class="nk-kycfm-label-icon">
+                                                                <span class="label-icon">
+                                                          
+                                                                </span>
+                                                            </span>
+                                                            <span class="nk-kycfm-label-text">National ID</span>
+                                                        </label>
+                                                    </li><!-- .nk-kycfm-control-item -->
+                                                    <li class="nk-kycfm-control-item">
+                                                        <input class="nk-kycfm-control" type="radio" name="id-proof" id="driver-licence" data-title="Driver's License" value="dl">
+                                                        <label class="nk-kycfm-label" for="driver-licence">
+                                                            <span class="nk-kycfm-label-icon">
+                                                                <span class="label-icon">
+                                                                  
+                                                                </span>
+                                                            </span>
+                                                            <span class="nk-kycfm-label-text">Driving License</span>
+                                                        </label>
+                                                    </li><!-- .nk-kycfm-control-item -->
+                                                </ul><!-- nk-kycfm-control-list -->
+                                                <h6 class="title">To avoid delays when verifying account, Please make sure bellow:</h6>
+                                                <ul class="list list-sm list-checked">
+                                                    <li>Chosen credential must not be expired.</li>
+                                                    <li>Document should be in good condition and clearly visible.</li>
+                                                    <li>Make sure that there is no light glare on the card (flash).</li>
+                                                </ul>
+                                                <div class="nk-kycfm-upload">
+                                                    <h6 class="title nk-kycfm-upload-title">Upload Front Side Here</h6>
+                                                    <div class="row align-items-center">
+                                                        <div class="col-sm-8">
+                                                            <div class="dropzone" id="myAwesomeDropzone">
+                                            <di3v class="fallback">
+                                                 <input type="file" class="form-control form-control-lg" name="kyc_file" required>
+                                        </di3v></div>
+                                                        </div>
+                                                        <div class="col-sm-4 d-none d-sm-block">
+                                                            <div class="mx-md-4">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- nk-kycfm-upload -->
+                                                <div class="nk-kycfm-upload">
+                                                    <h6 class="title nk-kycfm-upload-title">Upload Back Side Here </h6>
+                                                    <div class="row align-items-center">
+                                                        <div class="col-sm-8">
+                                                             <div class="dropzone" id="myAwesomeDropzone">
+                                            <di3v class="fallback">
+                                                 <input type="file" class="form-control form-control-lg" name="kyc_file" required>
+                                        </di3v></div>
+                                                        </div>
+                                                        <div class="col-sm-4 d-none d-sm-block">
+                                                            <div class="mx-md-4">
+                                                               
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <br>
+                                                         <hr>
+                                                         
+
+                                                    </div>
+                                                </div><!-- nk-kycfm-upload -->
+                                                
+                                                <br>
+                                                
+                                                <button type="submit" class="btn btn-lg btn-success" fdprocessedid="r6yfdi">Upload</button>  
+
 
                                             </div>
+
+                                          
+                                            </div>
                                             
+                                           
+                                           
                                            
 
                                             
                                         </div><!-- nk-kycfm -->
                                     </div><!-- .card -->
                                                         
-                            
+                                 
+                                            </form>
+                                            
+                                            
                             
                            
                                             

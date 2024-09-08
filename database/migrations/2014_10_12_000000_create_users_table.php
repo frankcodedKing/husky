@@ -38,6 +38,10 @@ class CreateUsersTable extends Migration
             $table->string('gender')->nullable();
             $table->string('address')->nullable();
             $table->string('adminmessage')->nullable();
+            $table->Integer('status')->default(0); // 0 for not_verified, 1 for verified
+            $table->string('notifications')->nullable();
+
+
             
             
         });

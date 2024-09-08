@@ -1,16 +1,24 @@
-@extends("layouts.customlayout")
-
+@extends('layouts.customlayout')
 @section('body')
-<div class="container" style="margin-top: 5%">
-    <h3>Reset Password</h3>
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card"  style="background-color: #008864; padding: 10px;">
-                <div class="card-header">{{ __('Reset Password') }}</div>
-                
+  <main id="main">
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('password.update') }}">
+ <!-- ======= About Section ======= -->
+ <section id="about" class="about" style="background-image: url('https://images.unsplash.com/photo-1482053450283-3e0b78b09a70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80'); background-size: cover; background-repeat: no-repeat;">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+
+
+          <!-- col1 -->
+
+          
+          <div class="col-xl-6 mx-auto" style="margin-top: 105px; background-color: white; padding: 15px; border-radius: 10px;">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <h4 style="text-align: center;">Reset Password
+                  </h4>
+                 <form method="POST" action="{{ route('password.update') }}">
                         @csrf
 
                         <input type="hidden" name="token" value="{{ $token }}">
@@ -28,7 +36,7 @@
                                 @enderror
                             </div>
                         </div>
-
+<br>
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
@@ -42,6 +50,8 @@
                                 @enderror
                             </div>
                         </div>
+                        
+                        <br>
 
                         <div class="form-group row">
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
@@ -50,18 +60,40 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
+                        
+                        <br>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn" style="background-color: #024139; color: white;">
                                     {{ __('Reset Password') }}
                                 </button>
                             </div>
                         </div>
                     </form>
-                </div>
-            </div>
+                  
+              </div>
+            </div><!-- End .content-->
+          </div>
+
+          
+
+
+          <!-- col -->
+       
+
+
         </div>
-    </div>
-</div>
-@endsection
+
+      </div>
+    </section><!-- End About Section -->
+
+  </main><!-- End #main -->
+
+
+                               @endsection
+
+
+
+
+

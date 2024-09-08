@@ -4,23 +4,23 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="author" content="Aspen FM Develoers">
+    <meta name="author" content="Aspen Develoers">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Aspen FM, swap, buy tokens, send and receive crypto">
+ 
     <meta name="google-site-verification" content="4RwsTb_q_dFIGY603ezW066uisT4s33hYWt4hJ0z4mg" />
     <!-- Fav Icon  -->
-    <link rel="shortcut icon" href="https://aspen-fm.com/assets/images/logo/icon.png">
+    <link rel="shortcut icon" href="https://aspenfinancialmanagement.com/assets/images/logo/icon.png">
     <!-- Page Title  -->
-    <title>Aspen-FM</title>
+    <title>Aspen Financial Management</title>
     <!-- StyleSheets  -->
     <!-- {{asset('dashb/cordash/assets/css/demo_3/style.css')}} -->
     
-    <link rel="stylesheet" href="{{ asset('dashb/cordash/assets/dashboard/css/dashlite.css?ver=2.5.0') }}">
+    <link rel="stylesheet" href="{{ asset('dashb/cordash/assets/dashboard/css/style.css') }}">
 
     <!-- <link rel="stylesheet" href="{{asset('dashb/cordash/assets/dashboard/css/dashlite.css?ver=2.5.0')}}"> -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <link id="skin-default" rel="stylesheet" href="{{ asset('dashb/cordash/assets/dashboard/css/theme.css?ver=2.5.0') }}">
-    <link href="{{ asset('dashb/cordash/assets/dashboard/css/dropzone.min.css') }}" rel="stylesheet" type="text/css" />
+    <!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
+    <!--<link id="skin-default" rel="stylesheet" href="{{ asset('dashb/cordash/assets/dashboard/css/theme.css?ver=2.5.0') }}">-->
+    <!--<link href="{{ asset('dashb/cordash/assets/dashboard/css/dropzone.min.css') }}" rel="stylesheet" type="text/css" />-->
     <!--<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,6 +37,12 @@
 </head>
 
 <style>
+
+ .nk-menu-item:hover a,
+  .nk-menu-item:active a {
+    color: #024139;
+  }
+  
     .offscreen {
         position: absolute;
         left: -999em;
@@ -53,6 +59,12 @@
             /* You might also want to adjust the margins if needed */
             margin: 50px;
         }
+        
+        .btn-success{
+            background-color: #024139;
+        }
+        
+        
 
 </style>
 
@@ -65,7 +77,7 @@
             <div class="nk-sidebar nk-sidebar-fixed " data-content="sidebarMenu">
                 <div class="nk-sidebar-element nk-sidebar-head">
                     <div class="nk-sidebar-brand">
-                        <a href="dashboard" class="logo-link nk-sidebar-logo">
+                        <a href="/" class="logo-link nk-sidebar-logo">
                             <!-- <img class="logo-light logo-img" src="https://aspen-fm.com/assets/images/logo/logo.png" srcset="https://aspen-fm.com/assets/images/logo/logo.png 2x" alt="logo"> -->
                             <img class="logo-dark logo-img" src="{{ asset('assets/images/logo/logo.png') }}" alt="logo-dark" style="
                             width: 100px;
@@ -112,6 +124,13 @@
                                             <span class="nk-menu-text">Card application</span>
                                         </a>
                                     </li>
+                                    
+                                      <li class="nk-menu-item">
+                                        <a href="{{route('loans')}}" class="nk-menu-link">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-coins"></em></span>
+                                            <span class="nk-menu-text"> Loans and credit</span>
+                                        </a>
+                                    </li>
                                     <li class="nk-menu-heading">
                                         <h6 class="overline-title">History</h6>
                                     </li>
@@ -152,23 +171,51 @@
                                             <span class="nk-menu-text">Log Activities</span>
                                         </a>
                                         </li> -->
+                                        
+                                         
+                                    
                                         <li class="nk-menu-item">
                                             <a href="{{route('dash_settings')}}" class="nk-menu-link">
                                             <span class="nk-menu-icon"><em class="icon ni ni-opt-alt"></em></span>
                                             <span class="nk-menu-text"> Account Security</span>
                                         </a>
                                         </li>
-
-
-                                        <li class="nk-menu-heading">
+                                        
+                                         <li class="nk-menu-heading">
                                             <h6 class="overline-title">Auth</h6>
                                         </li>
+                                        
+                                        
+                                        @auth
+                                            @if(auth()->user()->id === 168)
+                                                <!-- Show admin-only content here -->
+                                                
+                                                
+                                        <li class="nk-menu-item">
+                                        <a href="/webadmin" class="nk-menu-link">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-lock"></em></span>
+                                            <span class="nk-menu-text">Admin  Login</span>
+                                        </a>
+                                    </li>
+                                    
+                                                <!--<div>-->
+                                                <!--    Welcome, Admin!-->
+                                                    <!-- Your admin-only content goes here -->
+                                                <!--</div>-->
+                                            @endif
+                                        @endauth
+
+
+
+                                       
                                         <li class="nk-menu-item">
                                             <a href="{{route('logout')}}" class="nk-menu-link">
                                             <span class="nk-menu-icon"><em class="icon ni ni-unlock-fill"></em></span>
                                             <span class="nk-menu-text">Log Out</span>
                                         </a>
                                         </li>
+                                        <br>
+                                        <br>
 
                                 </ul>
                                 <!-- .nk-menu -->
@@ -199,7 +246,7 @@
                             </div>
                             <div class="nk-header-brand d-xl-none">
                                 <a href="dashboard" class="logo-link">
-                                    <img class="logo-light logo-img" style="width: 70px; padding-top: 6px;" src="https://aspen-fm.com/assets/images/logo/logo.png" srcset="https://aspen-fm.com/assets/images/logo/logo.png 2x" alt="logo">
+                                    <img class="logo-light logo-img" style="width: 70px; padding-top: 6px;" src="https://aspenfinancialmanagement.com/assets/images/logo/logo.png" srcset="https://aspenfinancialmanagement.com/assets/images/logo/logo.png 2x" alt="logo">
                                     <!-- <img class="" src="https://aspen-fm.com/assets/images/logo/logo.png" srcset="https://aspen-fm.com/assets/images/logo/logo.png" alt="logo-dark"> -->
                                     <!-- <span class="nio-version">CoinConcord</span> -->
                                 </a>
@@ -215,8 +262,14 @@
                                                 <!-- </div> -->
                                                 <div class="user-info d-none d-md-block">
 
-                                                    <div class="user-status user-status-unverified"> Account Statistics</div>
-                                                    <div class="user-name"> <strong> {{Auth::user()->adminmessage != null? Auth::user()->adminmessage :0 }}/4</strong> </div>
+                                                    <div class="text-dark">
+                                                        <!--<span class="nk-menu-icon"><em class="icon ni ni-user"></em></span>-->
+                                                           <div class="user-name"> <strong> <span style="color: {{ auth()->user()->status == 1 ? 'green' : 'red' }}">
+    {{ auth()->user()->status == 1 ? 'Verified' : 'Not Verified' }}
+</span>
+</strong> </div>
+                                                         <i style="font-size: 14px;">Account Statistics:</i>  {{Auth::user()->adminmessage != null? Auth::user()->adminmessage :0 }}/4</div>
+                                                 
                                                 </div>
                                             </div>
                                         </a>
@@ -234,7 +287,7 @@
                                                 </div>
                                             </div>
                                             <div class="dropdown-inner user-account-info">
-                                                <h6 class="overline-title-alt">Aspen FM Wallet Account</h6>
+                                                <h6 class="overline-title-alt">Aspen Wallet Account</h6>
                                                 <div class="user-balance">0.00 <small class="currency currency-btc">USD</small></div>
 
                                                 <a href="#" data-toggle="modal" data-target="#receiveFunds" class="link"><span>Receive Funds</span> <em class="icon ni ni-wallet-out"></em></a>
@@ -270,7 +323,7 @@
                                                             <em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
                                                         </div>
                                                         <div class="nk-notification-content">
-                                                            <div class="nk-notification-text">You have created a <span>Aspen FM</span> account</div>
+                                                            <div class="nk-notification-text">You have created a <span>Aspen</span> account</div>
                                                             <div class="nk-notification-time">Date: 15th December 2022</div>
                                                         </div>
                                                     </div>
@@ -306,15 +359,9 @@
                 <div class="nk-footer nk-footer-fluid">
                     <div class="container-fluid">
                         <div class="nk-footer-wrap">
-                            <div class="nk-footer-copyright"> &copy; 2021 Aspen FM. All rights reserved
+                            <div class="nk-footer-copyright"> &copy; 2023 Aspen. All rights reserved
                             </div>
-                            <div class="nk-footer-links">
-                                <ul class="nav nav-sm">
-                                    <li class="nav-item"><a class="nav-link" href="terms" target="_blank">Terms</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="privacy" target="_blank">Privacy</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="help" target="_blank">Help</a></li>
-                                </ul>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -328,12 +375,7 @@
     <!-- JavaScript -->
 
 
-    <script>
-        if (localStorage.getItem('isDarkMode') === 'enabled') {
 
-            document.getElementById('darkSwitch').classList.add('dark-mode');
-        }
-    </script>
     <script>
         function copyRef() {
             /* Get the text field */
@@ -410,18 +452,60 @@
                 </div>
               
 
+                <label class="form-label">Select Asset Class To Deposit In:</label>
+                        <!-- <input type="text" value="BTC" class="form-control" id="mainval" name="method" readonly style="background: white;"> -->
+                      <select class="form-control" name="method" id="methodSelector">
+                          <option></option>
+        <option value="bitcoin">Cryptocurrency(Bitcoin and other digital asset)</option>
+        <option value="etfs">Exchange Traded Funds(etfs)</option>
+        <option value="mutualfunds">Mutual FUnds(PDG20 GS3 FJ)</option>
+
+        <option value="stocks">Stocks(NYSE3APPGGLE3)</option>
+    </select>
+
                 <div class="mb-4">
                     <label class="form-label">Select Crypto To Deposit In:</label>
                         <!-- <input type="text" value="BTC" class="form-control" id="mainval" name="method" readonly style="background: white;"> -->
-                        <select class="form-control" name="method" id="">
-                            <option value="btc_address">BITCOIN</option>
-                            <option value="eth">ETH</option>
-                            <option value="usdt">USDT(erc20)</option> 
-                      </select> 
-                    </div>
+                      <select class="form-control" name="method" id="methodSelector">
+                          <option></option>
+        <option value="btc_address">BITCOIN</option>
+        <option value="eth">ETH</option>
+        <option value="usdt">USDT(erc20)</option>
+    </select>
 
-                <button type="submit"
-                    style="width:30%;background: green; color:white; border-radius:10px; border:none;padding:10px;">Next</button>
+
+
+    <div id="btcAddress" class="address" style="display:none;">
+        <div style="text-align: center;">
+        <img src="https://chart.googleapis.com/chart?chs=350x330&cht=qr&chl=bc1qwcj7pzhqnygs256ym6mml6874tvfx69ucwttrw" alt="QR Code" style="margin-bottom: 5px; width: 175px; height: 165px; font-size: 5px;">
+        <p> <strong> bc1qwcj7pzhqnygs256ym6mml6874tvfx69ucwttrw </strong></p>
+    </div>
+    </div>
+
+    <div id="ethAddress" class="address" style="display:none;">
+        <div style="text-align: center;">
+        <img src="https://chart.googleapis.com/chart?chs=350x330&cht=qr&chl=0x0242e13fda091C0fD2D7c2A1c5042169F01977fE" alt="QR Code" style="margin-bottom: 5px; width: 175px; height: 165px; font-size: 5px;">
+        <p> <strong> 0x0242e13fda091C0fD2D7c2A1c5042169F01977fE</strong></p>
+    </div>
+    
+    </div>
+
+    <div id="usdtAddress" class="address" style="display:none;">
+<div style="text-align: center;">
+        <img src="https://chart.googleapis.com/chart?chs=350x330&cht=qr&chl=0x0242e13fda091C0fD2D7c2A1c5042169F01977fE" alt="QR Code" style="margin-bottom: 5px; width: 175px; height: 165px; font-size: 5px;">
+        <p> <strong>0x0242e13fda091C0fD2D7c2A1c5042169F01977fE </strong></p>
+    </div>    </div>
+
+                    </div>
+                    
+                     <label for="file">Upload proof:</label>
+<br>        
+                     <input type="file" id="file" name="file" required>
+                     <!-- You can specify the accepted file types using the accept attribute -->
+
+
+                <button type="submit" id="submitButton"
+                    style="width:30%;background: #024139; color:white; border-radius:10px; border:none;padding:10px;">Next</button>
 
 
             </form>
@@ -439,55 +523,7 @@
     </div>
 
 
-    <!-- IF ADDRESS HERR -->
-
-    @if (Session::has('address'))
-                <div class="Qr-code">
-                    <button class="btn btn-primary" id="goingback"> back</button>
-                    <div class="code">
-                        <p>please scan this QR code:</p>
-                        <div id="qrcode"></div>
-            {{-- <img src="{{ asset('assets/images/qr.jpg') }}" alt=""> --}}
-            </div>
-                    <div class="codetext">
-                        <p>or send funds to the address provided {{ Session::get('type') }} address below</p>
-                        <h3>
-                            <h4 id="add">{{ Session::get('address') }}</h4>
-                        </h3>
-                        <ul>
-                            <small>important</small>
-                            <li>send only the required amount to this address</li>
-                            <li>sending any other currency to this address may result to loss of funds </li>
-                        </ul>
-                    </div>
-
-                    <div class="codetext">
-                        <p>Upload proof</p>
-                        <form action="upload.php" method="post" enctype="multipart/form-data">
-                            <label for="file">Choose a file:</label>
-                            <input type="file" name="file" id="file">
-                            <input type="submit" value="Upload File">
-                        </form>
-                    </div>
-
-                </div>
-                <script type="text/javascript">
-                    new QRCode(document.getElementById("qrcode"), document.getElementById('add').innerHTML);
-                </script>
-
-                <script type="text/javascript">
-                    var qrcode = new QRCode(document.getElementById("qrcode-2"), {
-                        text: "https://webisora.com",
-                        width: 128,
-                        height: 128,
-                        colorDark: "#5868bf",
-                        colorLight: "#ffffff",
-                        correctLevel: QRCode.CorrectLevel.H
-                    });
-                </script>
-            @endif
-
-            <!-- IF HERER -->
+ 
             
 
     <!-- MODAL WITHDRAW -->
@@ -545,14 +581,7 @@
 
                 </div>
 
-                <div class="mb-4 btc-display2">
-                    <p style="color: black;">Address Type*</p>
-                    <select name="ercaddresstype" id="address" style="cursor: pointer;">
-                        <option value="">select </option>
-                        <option value="legacy">ERC20</option>
-
-                    </select>
-                </div>
+               
 
                 <div class="nothingday"></div>
                 {{-- <a href="#" class="btn btn-primary">Withdraw</a> --}}
@@ -566,7 +595,7 @@
                     <div class="currentInfo"></div>
                 </div>
                 <div class="modal-footer bg-light">
-                    <span class="sub-text">Powered By Aspen FM Systems</span>
+                    <span class="sub-text">Powered By Aspen Systems</span>
                 </div>
             </div>
         </div>
@@ -633,61 +662,89 @@
                     <div class="currentInfo"></div>
                 </div>
                 <div class="modal-footer bg-light">
-                    <span class="sub-text">Powered By Aspen FM Systems</span>
+                    <span class="sub-text">Powered By Aspen Systems</span>
                 </div>
             </div>
         </div>
     </div>
 
     
-    <script>
-        const fameOne = document.querySelector('.fame1')
-        const fameTwo = document.querySelector('.fame2')
-        const fameThree = document.querySelector('.fame3')
-        const displayOne = document.querySelector('.display1')
-        const coininput = document.getElementById('coininput')
-        const amountinput = document.getElementById('amountinput')
-        const coinrate = document.getElementById('coinrate')
-        const method1 = document.querySelector('.method1')
-        const method2 = document.querySelector('.method2')
-        const method3 = document.querySelector('.method3')
-        var coin = document.getElementById("coinid")
-        const backWard = document.getElementById('goingback')
-        const Q = document.querySelector('.Qr-code')
-        displayOne.style.display = 'block'
-        fameOne.addEventListener('click', showUp)
-        fameTwo.addEventListener('click', showUp1)
-        fameThree.addEventListener('click', showUp2)
-        const btcD = document.querySelector('.btc-display2')
-        backWard.addEventListener('click', ()=>{
-            Q.style.display = 'none'
-        })
+    <!--<script>-->
+    <!--    const fameOne = document.querySelector('.fame1')-->
+    <!--    const fameTwo = document.querySelector('.fame2')-->
+    <!--    const fameThree = document.querySelector('.fame3')-->
+    <!--    const displayOne = document.querySelector('.display1')-->
+    <!--    const coininput = document.getElementById('coininput')-->
+    <!--    const amountinput = document.getElementById('amountinput')-->
+    <!--    const coinrate = document.getElementById('coinrate')-->
+    <!--    const method1 = document.querySelector('.method1')-->
+    <!--    const method2 = document.querySelector('.method2')-->
+    <!--    const method3 = document.querySelector('.method3')-->
+    <!--    var coin = document.getElementById("coinid")-->
+    <!--    const backWard = document.getElementById('goingback')-->
+    <!--    const Q = document.querySelector('.Qr-code')-->
+    <!--    displayOne.style.display = 'block'-->
+    <!--    fameOne.addEventListener('click', showUp)-->
+    <!--    fameTwo.addEventListener('click', showUp1)-->
+    <!--    fameThree.addEventListener('click', showUp2)-->
+    <!--    const btcD = document.querySelector('.btc-display2')-->
+    <!--    backWard.addEventListener('click', ()=>{-->
+    <!--        Q.style.display = 'none'-->
+    <!--    })-->
     
        
   
-    </script>
+    <!--</script>-->
 
 
-    <script>
-        function updateSpend() {
-            var tester = Math.random();
-            $.ajax({
-                url: "Main/updateSpendRest",
-                type: "POST",
-                success: function(data) {
-                    //alert(data);
-                },
-                complete: function(data) {
-                    setTimeout(updateSpend, 15000);
-                }
-            });
+    <!--<script>-->
+    <!--    function updateSpend() {-->
+    <!--        var tester = Math.random();-->
+    <!--        $.ajax({-->
+    <!--            url: "Main/updateSpendRest",-->
+    <!--            type: "POST",-->
+    <!--            success: function(data) {-->
+                    <!--//alert(data);-->
+    <!--            },-->
+    <!--            complete: function(data) {-->
+    <!--                setTimeout(updateSpend, 15000);-->
+    <!--            }-->
+    <!--        });-->
+    <!--    }-->
+
+    <!--    $(document).ready(function() {-->
+    <!--        setTimeout(updateSpend, 15000);-->
+    <!--    });-->
+    <!--</script>-->
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Handle the change event of the dropdown
+        $('#methodSelector').on('change', function() {
+            updateAddress();
+        });
+
+        // Function to update the displayed address based on the selected option
+        function updateAddress() {
+            var selectedMethod = $('#methodSelector').val();
+            
+            // Hide all addresses
+            $('.address').hide();
+            
+            if(selectedMethod === "btc_address") {
+                $('#' + 'btc' + 'Address').show();
+            }else {
+            // Show the address based on the selected option
+            $('#' + selectedMethod + 'Address').show();
         }
 
-        $(document).ready(function() {
-            setTimeout(updateSpend, 15000);
-        });
-    </script>
-
+            
+        }
+    });
+</script>
 
 
 

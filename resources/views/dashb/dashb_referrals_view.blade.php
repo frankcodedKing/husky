@@ -37,7 +37,7 @@
                                                 </div>
                                                
                                                 <div class="nk-refwg-action">
-                                                    <a href="{{ route('register') }}?refid={{ Auth::user()->id }}" class="btn btn-primary" target="_blank">Invite</a>
+                                                    <a href="{{ route('register') }}?refid={{ Auth::user()->id }}" class="btn btn-success" target="_blank">Invite</a>
                                                     
                                                 </div>
                                             </div>
@@ -59,11 +59,11 @@
                                                 <div class="nk-refwg-info g-3">
                                                     <div class="nk-refwg-sub">
                                                         <div class="title">
-                                                        0                                                        </div>
+                                                        {{ $all_ref->count() }}                                                        </div>
                                                         <div class="sub-text">Total Referred</div>
                                                     </div>
                                                     <div class="nk-refwg-sub">
-                                                        <div class="title">0.00</div>
+                                                        <div class="title">{{ $funds->bonus }}</div>
                                                         <div class="sub-text">Bonus Earned</div>
                                                     </div>
                                                 </div>

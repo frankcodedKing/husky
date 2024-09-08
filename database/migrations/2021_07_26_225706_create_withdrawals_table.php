@@ -23,6 +23,8 @@ class CreateWithdrawalsTable extends Migration
             $table->integer("userid");
             $table->string("name");
             $table->integer("status")->default(0);
+            $table->string('from'); // Add a new column
+
         });
     }
 

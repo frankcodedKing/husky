@@ -39,7 +39,7 @@ At Aspen, We Go Beyond just recommending an asset or investment strategy. We sta
                 
                 <div class="col-md-6">
                     
-                    <img class="card-img-top" src="assets/images/timg7.jpg" style="width:1000px; margin-top:100px;" alt="financialplanning">
+                    <img class="card-img-top" src="assets/images/timg7.jpg" style="width:500px; margin-top:100px;" alt="financialplanning">
                 </div>
             </div>
             <br>

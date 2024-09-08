@@ -19,6 +19,7 @@ class CreateDepositsTable extends Migration
             $table->timestamps();
             $table->date("depositDate");
             $table->integer("amount");
+            $table->string("asset");
             $table->string("method");
             $table->string("name");
             $table->string("email");

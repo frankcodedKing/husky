@@ -3,7 +3,7 @@
     '...',  // "\xc2\x85" => "\xe2\x80\xa6" =>  HORIZONTAL ELLIPSIS
     '+', '++',   // "\xc2\x87" => "\xe2\x80\xa1" => DOUBLE DAGGER
     '^', '%0',   // "\xc2\x89" => "\xe2\x80\xb0" => PER MILLE SIGN
-    'S', '<', 'OE',   // "\xc2\x8c" => "\xc5\x92" => LATIN  LIGATURE OE
+    'S', '<', 'OE',   // "\xc2\x8c" => "\xc5\x92" => LATIN CAPITAL LIGATURE OE
     '', 'Z', '', '', '\'',   // "\xc2\x91" => "\xe2\x80\x98" => LEFT SINGLE QUOTATION MARK
     '\'',   // "\xc2\x92" => "\xe2\x80\x99" => RIGHT SINGLE QUOTATION MARK
     '"', '"', '*', '-', '--',   // "\xc2\x97" => "\xe2\x80\x94" => EM DASH

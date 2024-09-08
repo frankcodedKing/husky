@@ -1,193 +1,365 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+  <meta name="robots" content="noindex,follow">
+  <meta name="robots" content="index,nofollow">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet,noodp"/>
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noodp"/>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Firstrade was launched to make online INVESTING easy and fast.">
+  <meta name="keywords" content="Bank,Firstrade Online S-abadel , Internet INVESTING"/>
+  <meta property="og:description" content="Firstrade Online S-abadel was launched to make online INVESTING easy and fast.">
+  <link rel="canonical" href="/">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="Firstrade Online S-abadel">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap%404.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js%401.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap%404.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <title>ASPEN FM</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+<!-- 
+    <link rel="stylesheet" href="https://bs-abadelb.com/temp/custom/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bs-abadelb.com/temp/custom/assets/css/flaticon.css">
+    <link rel="stylesheet" href="https://bs-abadelb.com/temp/custom/assets/css/remixicon.css">
+    <link rel="stylesheet" href="https://bs-abadelb.com/temp/custom/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://bs-abadelb.com/temp/custom/assets/css/odometer.min.css">
+    <link rel="stylesheet" href="https://bs-abadelb.com/temp/custom/assets/css/fancybox.css">
+    <link rel="stylesheet" href="https://bs-abadelb.com/temp/custom/assets/css/aos.css">
+    <link rel="stylesheet" href="https://bs-abadelb.com/temp/custom/assets/css/style.css">
+    <link rel="stylesheet" href="https://bs-abadelb.com/temp/custom/assets/css/responsive.css">
+    <link rel="stylesheet" href="https://bs-abadelb.com/temp/custom/assets/css/dark-theme.css">
+     -->
+    
+    <link rel="stylesheet" href="{{ asset('bsassets/temp/custom/assets/css/bootstrap.min.css') }}">
+    
+    
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
 
-
-  <!-- <link href="{{asset('assets/front/css/bootstrap.min.css')}}" rel="stylesheet"> -->
-
-
-  <!-- Favicons -->
-  <link href="{{ asset('assets/images/logo/icon.png') }}" rel="icon">
-  <link href="{{ asset('assets/images/logo/icon.png') }}" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="{{asset('assets/fronto/assets/vendor/aos/aos.css')}}" rel="stylesheet">
-  <link href="{{asset('assets/fronto/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-  <link href="{{asset('assets/fronto/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
-  <link href="{{asset('assets/fronto/assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
-  <link href="{{asset('assets/fronto/assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
-  <link href="{{asset('assets/fronto/assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
-  <link href="{{asset('assets/fronto/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="{{asset('assets/fronto/assets/css/style.css')}}" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Aspen
-  * Updated: Jun 14 2023 with Bootstrap v5.3.0
-  * Template URL: https://bootstrapmade.com/Aspen-bootstrap-corporate-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <link rel="stylesheet" href="{{ asset('bsassets/temp/custom/assets/css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('bsassets/temp/custom/assets/css/remixicon.css') }}">
+    <link rel="stylesheet" href="{{ asset('bsassets/temp/custom/assets/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('bsassets/temp/custom/assets/css/odometer.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('bsassets/temp/custom/assets/css/fancybox.css') }}">
+    <link rel="stylesheet" href="{{ asset('bsassets/temp/custom/assets/css/aos.css') }}">
+    <link rel="stylesheet" href="{{ asset('bsassets/temp/custom/assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('bsassets/temp/custom/assets/css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('bsassets/temp/custom/assets/css/dark-theme.css') }}">
+    
+    <link href="{{ asset('bsassets/public/asset/fonts/fontawesome/css/all.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ asset('bsassets/public/dashboard/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css " />
+  <link href="{{ asset('bsassets/public/dashboard/css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
+  
+    <title>Firsttrade - Dedicated to innovating, simplifying, and humanizing digital banking.</title>
+    <link rel="icon" type="image/png" href="{{ asset('bsassets/temp/custom/assets/storage/app/public/photos/Rgi1N1eBWuNgBzWDWyK2meM5kRLdWQaB8HyVegPu.png') }}">
 </head>
+
+
+
+
+
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center">
-      <!-- <h1 class="logo me-auto"><a href="index.html">🍃ASPEN<span>.</span></a></h1> -->
-      <!-- Uncomment below if you prefer to use an image logo -->
-       <a href="index.html" class="logo me-auto"><img src="{{ asset('assets/images/logo/Logox.jpg') }}" alt="" style="width: 200px;"></a>
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-           <li><a class="nav-link scrollto" href="{{ route('whatweinvestin') }}">What we invest in</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#about">About</a></li> -->
-          <!-- <li><a class="nav-link scrollto" href="{{ route('faq') }}">Faqs</a></li> -->
-         <!--  <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> -->
+
+
+    <div class="page-wrapper">
+
+        <header class="header-wrap style2">
+            <div class="header-bottom">
+                <div class="container">
+
+                    <nav class="navbar navbar-expand-md navbar-light" style="">
+                        <a class="navbar-brand" href="/">
+<img class="logo-light" src="{{ asset('bsassets/storage/app/public/photos/Rgi1N1eBWuNgBzWDWyK2meM5kRLdWQaB8HyVegPu.png') }}" alt="Firsttrade  " width="200" height="260">
+
+</a>
+
+
+
+<div id="google_translate_element"></div>
+<div class="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
+<div class="menu-close d-lg-none">
+<a href="javascript:void(0)"> <i class="ri-close-line"></i></a>
+</div>
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a href="/" class="nav-link active">
+Home
+<!--<i class="ri-arrow-down-s-line"></i>-->
+</a>
+
+</li>
+
+
+<li class="nav-item">
+<a href="whatweinvestin" class="nav-link">
+ What we Offer
+<!--<i class="ri-arrow-down-s-line"></i>-->
+</a>
+</li>
+
+
+<li class="nav-item">
+<a href="about" class="nav-link">
+Who We Are
+<!--<i class="ri-arrow-down-s-line"></i>-->
+</a>
+</li>
+
+<li class="nav-item">
+<a href="faq" class="nav-link">
+FAQ
+<!--<i class="ri-arrow-down-s-line"></i>-->
+</a>
+</li>
+
+
+
+
+<li class="nav-item">
+<a href="contact" class="nav-link">Contact Us</a>
+</li>
+
+
+<li class="nav-item d-lg-none">
+<a href="login" class="nav-link btn style1">Client Area<i class="ri-arrow-right-s-line"></i></a>
+</li>
+
+</ul>
+
+
+
+<div class="other-options md-none">
+<div class="option-item">
+<div class="user-login">
+<span><i class="ri-user-add-line"></i></span>
+<ul class="list-style">
+<li><a href="login">Sign In</a></li>
+<li><a href="register">Sign Up</a></li>
+</ul>
+</div>
+</div>
+<div class="option-item">
+<a href="login" class="btn style1">Client Area<i class="ri-arrow-right-s-line"></i></a>
+</div>
+</div>
+</div>
+</nav>
+<div class="mobile-bar-wrap">
+<div class="user-login d-lg-none">
+<span><i class="ri-user-add-line"></i></span>
+<ul class="list-style">
+<li><a href="login">Sign In</a></li>
+<li><a href="register">Sign Up</a></li>
+</ul>
+</div>
+<div class="mobile-menu d-lg-none">
+<a href="javascript:void(0)"><i class="ri-menu-line"></i></a>
+</div>
+</div></div>
+</div>
+</header>
+
+
         
-          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
-         
-          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="{{ route('about') }}">History</a></li>
-              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-              </li> -->
-              <li><a href="{{ route('howwearedifferent') }}">How we are different</a></li>
-              
-              <li><a href="{{ route('whatweinvestin') }}">What we invest in</a></li>
-              <!-- <li><a href="{{ route('fiduciary') }}">Fiduciary</a></li> -->
-               <li><a href="{{ route('clienteducation') }}">Client education</a></li>
-              <li><a href="{{ route('ourteam') }}">Our team</a></li>
-              <li><a href="{{ route('assetsmanagement') }}">Assets under management</a></li>
-              <li><a href="{{ route('privacypolicy') }}">Privacy policy</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <a href="login" class="get-started-btn scrollto">Account</a>
-    </div>
-  </header><!-- End Header -->
-
-
 
 @yield("body")
 
 
 
-<!-- Highlight script load-->
-<script src="{{asset('assets/front/js/highlight.min.js')}}"></script>
+<footer class="footer-wrap">
+            <div class="container">
+                <div class="row pt-100 pb-75">
+                    <div class="col-xl-3 col-lg-5 col-md-5 col-sm-6">
+                        <div class="footer-widget">
+                            <a href="/" class="footer-logo">
+  <img src="{{ asset('bsassets/storage/app/public/photos/Tq7LTKTMLMS7cX4I6422Rfd0ulnLgqRn1Ov2Mv00.png') }}" alt="Image">
+  </a>
+                            <p class="comp-desc">
+                                We are now one of the largest digital banking providers, dedicated to innovating, simplifying, and humanizing banking.
+                            </p>
+                            <ul class="social-profile style1 list-style">
+                                <li>
+                                    <a target="_blank" href="https://facebook.com/">
+  <i class="ri-facebook-fill"></i>
+  </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://twitter.com/">
+  <i class="ri-twitter-fill"></i>
+  </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://instagram.com/">
+  <i class="ri-instagram-line"></i>
+  </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://linkedin.com/">
+  <i class="ri-linkedin-fill"></i>
+  </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                        <div class="footer-widget">
+                            <h3 class="footer-widget-title">Company</h3>
+                            <ul class="footer-menu list-style">
+                                <li>
+                                    <a href="about" target="_blank">
+  Home
+  </a>
+                                </li>
+                                <li>
+                                    <a href="business" target="_blank">
+                                    
+What we Offer
+
+  </a>
+                                </li>
+                                <li>
+                                    <a href="personal" target="_blank">
+  
+  </a>
+                                </li>
+                                <li>
+                                    <a href="cards" target="_blank">
+                                    Who We Are
+  </a>
+                                </li>
+                                <li>
+                                    <a href="loans" target="_blank">
+  Contact Us
+  </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6">
+                        <div class="footer-widget">
+                            <h3 class="footer-widget-title">Resources</h3>
+                            <ul class="footer-menu list-style">
+                               
+                                <li>
+                                    <a href="#" target="">
+  FAQ's
+  </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="">
+  Download App
+  </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="">
+  Privacy Policy
+  </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="">
+  Terms &amp; Conditions
+  </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
 
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+                  
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Aspen<span>.</span></h3>
-            <p>
-              Aspen Financial Management is the leading 
-              financial establishment providing high-quality 
-              international investment services. We are always 
-              ready to partner with you by offering full financial 
-              support to individuals and companies worldwide.
-            </p>
-          </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-             
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Whatweinvestin.html">What we invest in</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Faqs</a></li>
-              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li> -->
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-               <li><i class="bx bx-chevron-right"></i><a href="Howwearedifferent.html">How we are different</a></li>
-              <li><i class="bx bx-chevron-right"></i><a href="fiduciary.html">Fiduciary</a></li>
-              <li><i class="bx bx-chevron-right"></i><a href="Clienteducation.html">Client education and services</a></li>
-               <li><i class="bx bx-chevron-right"></i><a href="Whatweinvestin.html">What we invest in</a></li>
-              <li><i class="bx bx-chevron-right"></i><a href="Team.html">Our team</a></li>
-              <li><i class="bx bx-chevron-right"></i><a href="Assetsmanagement.html">Assets under management</a></li>
-              <li><i class="bx bx-chevron-right"></i><a href="Privacypolicy.html">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>Subscribe to get lates updates on products and services to your email.</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-
-        </div>
-      </div>
+                    <div class="col-xl-3 col-lg-7 col-md-6 col-sm-6">
+                        <div class="footer-widget">
+                            <h3 class="footer-widget-title">Contact Us</h3>
+                            <ul class="contact-info list-style">
+                                <li>
+                                    <i class="ri-map-pin-fill"></i>
+                                    <h6>Location</h6>
+                                    <p>Oscar Esplà 37, 03007, Alicante, US</p>
+                                </li>
+                                <li>
+                                    <i class="ri-mail-open-fill"></i>
+                                    <h6>Email</h6>
+                                    <a href="#">info@Firsttrade.com</a>
+                                </li>
+                                <li>
+                                    <i class="ri-phone-fill"></i>
+                                    <h6>Phone</h6>
+                                    <a href="">(936)-6252-632</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="copyright-text"><i class="ri-copyright-line"></i> <span></span>Copyright. All Rights Reserved By <a href="login" target="_blank">Firsttrade</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
-    <div class="container d-md-flex py-4">
+    <a href="javascript:void(0)" class="back-to-top bounce"><i class="ri-arrow-up-s-line"></i></a>
 
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Aspen</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/Aspen-bootstrap-corporate-template/ -->
-          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
-        </div>
-      </div>
-      <div class="social-links text-center text-md-end pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    
+<script>
+  const words = ["Mutual Funds. ", "ETFs.", "Stocks.", "Cryptocurrency."];
+  let currentIndex = 0;
+  
+  setInterval(() => {
+    document.getElementById("changingWord").textContent = words[currentIndex];
+    currentIndex = (currentIndex + 1) % words.length;
+  }, 900);
+</script>
 
-  <!-- Vendor JS Files -->
-  <script src="{{asset('assets/fronto/assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
-  <script src="{{asset('assets/fronto/assets/vendor/aos/aos.js')}}"></script>
-  <script src="{{asset('assets/fronto/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-  <script src="{{asset('assets/fronto/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
-  <script src="{{asset('assets/fronto/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
-  <script src="{{asset('assets/fronto/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
-  <script src="{{asset('assets/fronto/assets/vendor/php-email-form/validate.js')}}"></script>
 
-  <!-- Template Main JS File -->
-  <script src="{{asset('assets/fronto/assets/js/main.js')}}"></script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/66db55cc50c10f7a00a4ef46/1i74ce9uk';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 
+    <script data-cfasync="false" src="https://cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script>
+    <script src="{{ asset('bsassets/temp/custom/assets/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('bsassets/temp/custom/assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('bsassets/temp/custom/assets/js/form-validator.min.js') }}"></script>
+    <script src="{{ asset('bsassets/temp/custom/assets/js/contact-form-script.js') }}"></script>
+    <script src="{{ asset('bsassets/temp/custom/assets/js/aos.js') }}"></script>
+    <script src="{{ asset('bsassets/temp/custom/assets/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('bsassets/temp/custom/assets/js/odometer.min.js') }}"></script>
+    <script src="{{ asset('bsassets/temp/custom/assets/js/jquery.countdown.min.js') }}"></script>
+    <script src="{{ asset('bsassets/temp/custom/assets/js/fancybox.js') }}"></script>
+    <script src="{{ asset('bsassets/temp/custom/assets/js/jquery.appear.js') }}"></script>
+    <script src="{{ asset('bsassets/temp/custom/assets/js/tweenmax.min.js') }}"></script>
+    <script src="{{ asset('bsassets/temp/custom/assets/js/main.js') }}"></script>
+    
 </body>
 
 </html>

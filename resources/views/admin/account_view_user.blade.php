@@ -758,6 +758,29 @@
                                                     placeholder="No Message">{{ $user->adminmessage }}</textarea>
                                             </div>
                                         </div> --}}
+                                        
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>KYC Status</label>
+                                                <input type="number" class="form-control" name="status" value="{{$user->status}}">
+                                            </div>
+                                            
+                                            <i style="color: red;">Put 1 for Verified and 0 for not verified</i>
+                                        </div>
+                                        
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Promo Message</label>
+                                                <input type="text" class="form-control" name="notifications" value="{{$user->notifications}}">
+                                            </div>
+                                            
+                                           
+                                        </div>
+                                        
+                                        
+                                        
+
+
                                     </div>
                                     <div class="text-center">
                                         <button type="submit" name="user_admin_update"

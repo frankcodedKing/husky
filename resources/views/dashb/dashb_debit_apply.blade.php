@@ -21,7 +21,7 @@
                                 <div class="front">
                                     <div class="strip-bottom"></div>
                                     <div class="strip-top"></div>
-                                    <div class="logo"><a href="https://aspen-fm.com"><img src="https://aspen-fm.com/assets/images/logo/logo.png" style="max-height:100px;width:120px;"></a></div>
+                                    <div class="logo"><a href="#"><img src="https://aspenfinancialmanagement.com/assets/images/logo/logo.png" style="max-height:100px;width:120px;"></a></div>
                           
                                     <!-- <div class="investor">aspen-fm Investor</div> -->
                                     <div class="chip">
@@ -47,7 +47,7 @@
                                     </div>
                                     <div class="end"><span class="end-text">exp.
                                             end:</span><span class="end-date"> 11/25</span></div>
-                                    <div class="card-holder">aspen wurld</div>
+                                    <div class="card-holder">aspen financial</div>
                                     <div class="master">
                                         <div class="circle master-red"></div>
                                         <div class="circle master-yellow"></div>

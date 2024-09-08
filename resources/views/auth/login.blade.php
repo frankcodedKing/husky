@@ -16,8 +16,10 @@
           <div class="col-xl-6 mx-auto" style="margin-top: 105px; background-color: white; padding: 15px; border-radius: 10px;">
             <div class="icon-boxes d-flex flex-column justify-content-center">
               <div class="row">
-                <h4 style="text-align: center;">Welcome back!
+                <h4 style="text-align: center;">Welcome !
                   </h4>
+                  
+                  <p>Provide your credentials to access your account.</p>
                   <form method="POST" action="{{ route('login') }}">
                     @csrf
 
@@ -41,19 +43,21 @@
                       name="password" required autocomplete="new-password">
 
               <br>
-              <p>Forgot your password?<strong><a href="reset"> Recover Password </a></strong></p>
+              
+             
+              <p>Forgot your password?<strong><a href="/password/reset"> Reset Password </a></strong></p>
 
 
                    <div style="text-align: center;">
-                   <button type="submit" class="btn btn-success btn-lg" style="width: 25%; justify-content: center;">
+                   <button type="submit" class="btn btn-success btn-lg" style="width: 25%; justify-content: center; background-color: #024139;">
                      Login 
                     </button>
                    </div>
 
                     <br>
-                    <p style="text-align: center;"><strong>OR</strong></p>
+                    <p style="text-align: center;"><strong>-OR-</strong></p>
                     <!-- <br> -->
-                    <p style="text-align: center;">Do not have an account. <strong><a href="register">Sign up here</a></strong></p>
+                    <p style="text-align: center;">Do not have an account? <strong><a href="/register">Sign up here</a></strong></p>
 
                   </form>
               </div>

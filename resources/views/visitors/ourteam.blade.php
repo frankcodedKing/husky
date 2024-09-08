@@ -17,8 +17,8 @@
           <li><a href="/">Home</a></li>
           <li>Team</li>
         </ol>
-        <h2>Team</h2>
-
+        <h2>A Team Redefining The Game</h2>
+<p>Solving Critical market challenges</p>
       </div>
     </section><!-- End Breadcrumbs -->
 
@@ -29,18 +29,15 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p>
-                            Our constant goal is to recruit, retain, and develop the best talent available. However, at
-                            times, even the most talented individuals need a little help finding their way. At
-                            {{ $compd ? $compd->companyname : 'company name' }}, we open our doors to professionals of all
-                            orientations, races, abilities, genders, and life experiences. In addition, we offer an
-                            accommodating and flexible work environment so that our associates can maximize their
-                            effectiveness at home, at work, and within their communities. At the same time, we encourage and
-                            sponsor employee networks that build on our diversity and inclusion strategy. These networks,
-                            called Business Resource Groups (BRGs), promote individual professional development, while
-                            helping the company achieve its business objectives.Our diverse and talented employees are
-                            committed to helping people and companies attain financial wellness through our innovative
-                            products and financial solutions. Whether working with multinational corporations or individual
-                            families, we are dedicated to helping create financial strength today and security for tomorrow.
+                            Deep within the core of Aspen Financial Management, an assembly of financial virtuosos converges, our collective knowledge is a tapestry woven from years of honing skills in advanced financial modeling, quantitative analysis, and econometric techniques. Armed with a nuanced understanding of derivatives pricing, stochastic calculus, and volatility surface dynamics, our team sculpts investment strategies with the precision of a master sculptor. Our experts, fluent in the intricacies of modern portfolio theory and the complexities of efficient frontier optimization, deftly navigate the labyrinth of financial markets, discerning alpha from beta with the discerning eye of a connoisseur.
+                            </p>
+                            <p>
+                                
+In parallel, our board members, luminaries drawn from private equity, venture capital, and alternative asset management, bring a wealth of experience in crafting bespoke investment structures. With our expertise in structured finance, mezzanine financing, and venture capital valuation methods, we offer invaluable insights into structuring deals that not only mitigate risk but also amplify potential returns. Aspen Financial Management’s strategic counsel extends to capital raising strategies, syndication of investments, and divestiture tactics, ensuring that our clients benefit from a holistic approach to wealth preservation and growth.
+                            </p>
+
+<p>
+The symphony of financial minds culminates in an environment where every investment decision is an intricate dance of prudence, strategy, and finesse. Through the combined expertise of our team and board members, Aspen Financial Management stands at the forefront of financial innovation, where the pursuit of alpha is an art form, and the preservation of capital is a solemn commitment. Our clients trust us not just with their wealth, but with their financial legacies, knowing that every decision is underpinned by a reservoir of knowledge and experience that transcends the ordinary and achieves the extraordinary.
                         </p>
                     </div>
                 </div>
@@ -56,12 +53,12 @@
                                     <img class="img"
                                         style="border: 2px solid white; border-radius: 50%;width:50%; height:180px;
 height:180px;"
-                                        src="https://i.ibb.co/Jsv8369/IMG-5554-removebg-preview.png">
+                                        src="{{ asset('assets/images/team/AspenMatthew.PNG') }}">
                                 </a>
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title"> Matthew Frank Amelio</h4>
-                                <h6 class="card-category text-muted">President and Founder</h6>
+                                <h4 class="card-title"> Matthew Amelio</h4>
+                                <h6 class="card-category text-muted">Principal</h6>
                                 <!--buttonforreadnnore-->
 
                                 <button class="btn btn-dark accordy" id="2">Read Bio</button>
@@ -71,7 +68,7 @@ height:180px;"
                                 <!--dropdown-->
                                 <div class="panel" id="2">
                                     <p class="card-description">
-                                    Matthew F Amelio has vast experience in the financial services industry spanning over 47
+                                    Matthew Amelio has vast experience in the financial services industry spanning over 47
                                         years and In order to reach our full potential, he leverages on our blend of
                                         different people, backgrounds and experiences to create value for our employees,
                                         shareholders and investors. This unique blend of perspectives enhances our culture,
@@ -101,12 +98,12 @@ height:180px;"
                             <div class="card-header card-avatar">
                                 <a href="#">
                                     <img class="img" style="border: 2px solid white; border-radius: 50%;width:55%;"
-                                        src="assets/images/one.jpg">
+                                        src="{{ asset('assets/images/team/AspenMichael.PNG') }}">
                                 </a>
                             </div>
                             <div class="card-body ">
                                 <h4 class="card-title">Michael McCain</h4>
-                                <h6 class="card-category text-muted">CoFounder</h6>
+                                <h6 class="card-category text-muted">Principal</h6>
 
                                 <!--buttonforreadnnore-->
 
@@ -143,12 +140,12 @@ height:180px;"
                                     <img class="img"
                                         style="border: 2px solid white; border-radius: 50%;width:50%; height:180px;
 height:180px;  "
-                                        src="assets/images/shi.jpeg">
+                                        src="{{ asset('assets/images/team/Aspen Shihad.PNG') }}">
                                 </a>
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title">Shihad Hussain</h4>
-                                <h6 class="card-category text-muted"> cofounder</h6>
+                                <h6 class="card-category text-muted"> Principal</h6>
                                 <button class="btn btn-dark accordy" id="3">Read Bio</button>
 
 
@@ -180,8 +177,8 @@ height:180px;  "
                         <div class="card card-profile text-center">
                             <div class="card-header card-avatar">
                                 <a href="#">
-                                    <img class="img" style="border: 2px solid white; border-radius: 50%;width:53%;"
-                                        src="https://i.ibb.co/R20xfWh/IMG-5556-removebg-preview.png">
+                                    <img class="img" style="border: 2px solid white; border-radius: 50%;width:47%;"
+                                        src="{{ asset('assets/images/team/Aspen Edwards.JPG') }}">
                                 </a>
                             </div>
                             <div class="card-body ">
@@ -242,7 +239,7 @@ height:180px;  "
                                     <img class="img"
                                         style="border: 2px solid white; border-radius: 50%;width:50%; height:180px;
 height:180px; "
-                                        src="https://i.ibb.co/MBMGPFF/IMG-5552-removebg-preview.png">
+                                        src="{{ asset('assets/images/team/AspenRichard.JPG') }}">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -297,7 +294,7 @@ height:180px; "
                                     <img class="img"
                                         style="border: 2px solid white; border-radius: 50%;width:50%; height:180px;
 height:180px; "
-                                        src="assets/images/stella.jpg">
+                                        src="{{asset('assets/images/team/AspenStella.PNG')}}">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -332,6 +329,103 @@ height:180px; "
                 <div class="row">
 
 
+<!--MD-->
+                    <div class="col-md-4">
+                        <div class="card card-profile text-center">
+                            <div class="card-header card-avatar">
+                                <a href="#">
+                                    <img class="img"
+                                        style="border: 2px solid white; border-radius: 50%;width:50%; height:180px; 
+height:180px;"
+                                        src="{{asset('assets/images/team/Aspen Mark.JPG')}}">
+                                </a>
+                            </div>
+                            <div class="card-body ">
+                                <h4 class="card-title"> Mark Degiorgio</h4>
+                                <h6 class="card-category text-muted"> Managing Director</h6>
+
+                                <!--buttonforreadnnore-->
+
+                                <button class="btn btn-dark accordy" id="9">Read Bio</button>
+
+
+                                <!--dropdown-->
+                                <div class="panel" id="9">
+                                    <p class="card-description">
+
+                                        Mark joined Aspen Financial Management at its inception, Mark was previously a
+                                        Logistician in the US Army. Mark is a strategic and experienced Managing Director
+                                        and accountant specializing in profitable business growth and Magine improvement
+                                        integrating marketing creativity with finance discipline achieving success across
+                                        multiple industry verticals. Mark is known for identifying and implementing various
+                                        strategies to promote financial security and accurate reporting to capture market
+                                        anomalies while maintaining a business mindset beyond portfolio management.
+                                        Mark has served on the Board of Directors of numerous companies, including Barfield
+                                        and Powell. Mark is a graduate of the University of Virginia where he earned a
+                                        bachelor's of commerce in Human Resource Management and a master's of business
+                                        administration at the University of Los Angeles.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!--second-->
+
+
+
+
+                    <!--third-->
+
+
+                    <div class="col-md-4">
+                        <div class="card card-profile text-center">
+                            <div class="card-header card-avatar">
+                                <a href="#">
+                                    <img class="img"
+                                        style="border: 2px solid white; border-radius: 50%;width:50%; height:180px;
+height:180px;"
+                                        src="{{asset('assets/images/team/AspenEmily.PNG')}}">
+                                </a>
+                            </div>
+                            <div class="card-body ">
+                                <h4 class="card-title">Emily A Restine</h4>
+                                <h6 class="card-category text-muted">Head of Portfolio Management</h6>
+                                <!--buttonforreadnnore-->
+
+                                <button class="btn btn-dark accordy" id="8">Read Bio</button>
+
+
+
+
+                                <!--dropdown-->
+                                <div class="panel" id="8">
+                                    <p class="card-description">
+                                        Emily Restine
+
+                                        Emily Restine is an Experienced Portfolio Manager. In those roles, she oversees the
+                                        firm's Portfolio Management Department, which includes the Research, Investment
+                                        Operations, Investment Solutions and Portfolio Evaluation Groups. She is also a
+                                        member of the Technology Transformation Committee. Emily speaks regularly at client
+                                        seminars and meets with institutional clients globally, providing information
+                                        regarding market outlook, portfolio positioning and global economic factors. Emily
+                                        joined Aspen financial Management in 2016 and has served on the firm's five-member
+                                        IPC since 2015. Prior to her current responsibilities, She held several different
+                                        positions at the firm, including Capital Markets Research Team Leader, Securities
+                                        Research Team Leader and Securities Research Analyst. She has a degree in Finance
+                                        from the University of Arizona. She used lived in the San Francisco Bay Area with
+                                        her husband till he passed. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+<!--SEC-->
 
                     <div class="col-md-4">
 
@@ -342,7 +436,7 @@ height:180px; "
                                     <img class="img"
                                         style="border: 2px solid white; border-radius: 50%;width:50%; height:180px;
 height:180px; "
-                                        src="assets/images/hen.jpeg">
+                                        src="{{asset('assets/images/team/AspenChenglei.JPG')}}">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -378,98 +472,6 @@ height:180px; "
                     </div>
 
 
-
-                    <!--second-->
-
-
-
-
-                    <!--third-->
-
-
-                    <div class="col-md-4">
-                        <div class="card card-profile text-center">
-                            <div class="card-header card-avatar">
-                                <a href="#">
-                                    <img class="img"
-                                        style="border: 2px solid white; border-radius: 50%;width:50%; height:180px;
-height:180px;"
-                                        src="https://i.ibb.co/KFTmQTr/IMG-5555-removebg-preview.png">
-                                </a>
-                            </div>
-                            <div class="card-body ">
-                                <h4 class="card-title">Emily A Restine</h4>
-                                <h6 class="card-category text-muted">Head of Portfolio Management</h6>
-                                <!--buttonforreadnnore-->
-
-                                <button class="btn btn-dark accordy" id="8">Read Bio</button>
-
-
-
-
-                                <!--dropdown-->
-                                <div class="panel" id="8">
-                                    <p class="card-description">
-                                        Emily Restine
-
-                                        Emily Restine is an Experienced Portfolio Manager. In those roles, she oversees the
-                                        firm's Portfolio Management Department, which includes the Research, Investment
-                                        Operations, Investment Solutions and Portfolio Evaluation Groups. She is also a
-                                        member of the Technology Transformation Committee. Emily speaks regularly at client
-                                        seminars and meets with institutional clients globally, providing information
-                                        regarding market outlook, portfolio positioning and global economic factors. Emily
-                                        joined Aspen financial Management in 2016 and has served on the firm's five-member
-                                        IPC since 2015. Prior to her current responsibilities, She held several different
-                                        positions at the firm, including Capital Markets Research Team Leader, Securities
-                                        Research Team Leader and Securities Research Analyst. She has a degree in Finance
-                                        from the University of Arizona. She used lived in the San Francisco Bay Area with
-                                        her husband till he passed. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card card-profile text-center">
-                            <div class="card-header card-avatar">
-                                <a href="#">
-                                    <img class="img"
-                                        style="border: 2px solid white; border-radius: 50%;width:50%; height:180px; 
-height:180px;"
-                                        src="https://i.ibb.co/GCRkWKN/IMG-5568-removebg-preview.png">
-                                </a>
-                            </div>
-                            <div class="card-body ">
-                                <h4 class="card-title"> Mark Degiorgio</h4>
-                                <h6 class="card-category text-muted"> Managing Director</h6>
-
-                                <!--buttonforreadnnore-->
-
-                                <button class="btn btn-dark accordy" id="9">Read Bio</button>
-
-
-                                <!--dropdown-->
-                                <div class="panel" id="9">
-                                    <p class="card-description">
-
-                                        Mark joined Aspen Financial Management at its inception, Mark was previously a
-                                        Logistician in the US Army. Mark is a strategic and experienced Managing Director
-                                        and accountant specializing in profitable business growth and Magine improvement
-                                        integrating marketing creativity with finance discipline achieving success across
-                                        multiple industry verticals. Mark is known for identifying and implementing various
-                                        strategies to promote financial security and accurate reporting to capture market
-                                        anomalies while maintaining a business mindset beyond portfolio management.
-                                        Mark has served on the Board of Directors of numerous companies, including Barfield
-                                        and Powell. Mark is a graduate of the University of Virginia where he earned a
-                                        bachelor's of commerce in Human Resource Management and a master's of business
-                                        administration at the University of Los Angeles.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
                 <div class="row">
 
@@ -480,9 +482,8 @@ height:180px;"
                             <div class="card-header card-avatar">
                                 <a href="#">
                                     <img class="img"
-                                        style="border: 2px solid white; border-radius: 50%;width:50%; height:180px;
-height:180px; "
-                                        src="assets/images/three.jpg">
+                                        style="border: 2px solid white; border-radius: 50%; width:50%; height:180px;"
+                                        src="{{asset('assets/images/team/evelyn.jpg')}}">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -526,44 +527,47 @@ height:180px; "
                     <!--third-->
 
 
-                    <div class="col-md-4">
+ <div class="col-md-4">
                         <div class="card card-profile text-center">
                             <div class="card-header card-avatar">
                                 <a href="#">
                                     <img class="img"
                                         style="border: 2px solid white; border-radius: 50%;width:50%; height:180px;
-height:180px; "
-                                        src="assets/images/MarkGeller.jpg">
+height:180px;"
+                                        src="{{asset('assets/images/team/Aspen Charles.PNG')}}">
                                 </a>
                             </div>
-                            <div class="card-body">
-                                <h4 class="card-title">Mark Geller </h4>
+                            <div class="card-body ">
+                                <h4 class="card-title">Charles H Ferry Jr</h4>
                                 <h6 class="card-category text-muted">Certified Retirement Financial Advisor</h6>
-                                <button class="btn btn-dark accordy" id="11">Read Bio</button>
+                                <!--buttonforreadnnore-->
 
-
-
-
-
+                                <button class="btn btn-dark accordy" id="15">Read Bio</button>
                                 <!--dropdown-->
-                                <div class="panel" id="11">
-                                    <p class="card-description">
-                                        Mark Geller is a Certified Retirement Financial Advisor and a member of the
+                                <div class="panel"id="15">
+                                    
+                                    
+                                                                        <p class="card-description">
+                                        Charles H Ferry is a Certified Retirement Financial Advisor and a member of the
                                         Investment Policy Committee (IPC). He oversees the firm’s Retirement plan offers And
                                         carries out Researches about, Investment Operations, Investment Solutions, Global
                                         Custody Management, and Portfolio Evaluation Groups. He is also a member of the
                                         Client Services Group. Mark speaks regularly at client seminars and meets with
                                         institutional clients globally, providing information regarding a perfect retirement
-                                        approach. Mark Geller joined Aspen Financial Managment in May 2012 and has been an
+                                        approach. Charles H Ferry joined Aspen Financial Managment in May 2012 and has been an
                                         invaluable asset to the company. Before his current responsibilities, Mark held
                                         several different positions at the firm, including Retirement Portfolio Research
                                         Team Leader, Retirement Portfolio Strategist and Analyst. Mark has a degree in
                                         Finance from the University of San Francisco and a degree in Human Resources
                                         Management.</p>
+
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
 
                     <div class="col-md-4">
                         <div class="card card-profile text-center">
@@ -572,7 +576,7 @@ height:180px; "
                                     <img class="img"
                                         style="border: 2px solid white; border-radius: 50%;width:50%; height:180px;
 height:180px; "
-                                        src="assets/images/kim.jpeg">
+                                        src="{{asset('assets/images/team/Aspen Courtney.PNG')}}">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -612,11 +616,11 @@ height:180px; "
                                     <img class="img"
                                         style="border: 2px solid white; border-radius: 50%;width:50%; height:180px;
 height:180px; "
-                                        src="assets/images/fivenew.jpg">
+                                        src="{{asset('assets/images/team/AspenSusan.PNG')}}">
                                 </a>
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">Grillo Susan</h4>
+                                <h4 class="card-title">Susan Grilo </h4>
                                 <h6 class="card-category text-muted">Head of Customer and Private Client services
                                 </h6>
                                 <!--buttonforreadnnore-->
@@ -664,7 +668,7 @@ height:180px; "
                                     <img class="img"
                                         style="border: 2px solid white; border-radius: 50%;width:50%; height:180px;
 height:180px; "
-                                        src="assets/images/guy.jpeg">
+                                        src="{{asset('assets/images/team/guy.PNG')}}">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -699,42 +703,50 @@ height:180px; "
                         </div>
                     </div>
 
+                   <!--here-->
+                   
+                   
                     <div class="col-md-4">
                         <div class="card card-profile text-center">
                             <div class="card-header card-avatar">
                                 <a href="#">
                                     <img class="img"
                                         style="border: 2px solid white; border-radius: 50%;width:50%; height:180px;
-height:180px;"
-                                        src="https://i.ibb.co/XFnTdcD/IMG-5553-removebg-preview.png">
+height:180px; "
+                                        src="{{asset('assets/images/team/Aspen Mark.PNG')}}">
                                 </a>
                             </div>
-                            <div class="card-body ">
-                                <h4 class="card-title">Charles H Ferry Jr</h4>
-                                <h6 class="card-category text-muted">Digital specialist</h6>
-                                <!--buttonforreadnnore-->
+                            <div class="card-body">
+                                <h4 class="card-title">Mark Geller </h4>
+                                <h6 class="card-category text-muted"> Digital specialist</h6>
+                                <button class="btn btn-dark accordy" id="11">Read Bio</button>
 
-                                <button class="btn btn-dark accordy" id="15">Read Bio</button>
+
+
+
+
                                 <!--dropdown-->
-                                <div class="panel"id="15">
-                                    <p class="card-description">
+                                <div class="panel" id="11">
+
+                                                                            <p class="card-description">
 
                                         With over 10 years of experience in the digital world and project management
-                                         Charles as the Digital Specialist's role is to design, create, and deliver
+                                         Mark as the Digital Specialist's role is to design, create, and deliver
                                         marketing programs to support expansion and growth of the company services and
-                                        products. ... Developing, managing and designing layouts of communications such as
+                                        products. Developing, managing and designing layouts of communications such as
                                         presentations, newsletters, event support materials, research papers, and brochures.
                                         Doubling as the project manager he oversees entire project and serve as a point of
                                         contact for a client or customer. He coordinates work, identifies risks and
                                         mitigation plans, and handles budget strategies. Also helps set timeline estimates
                                         and ensure the needs of stakeholders are met.
 
-                                        Before joining Aspen financial management, Matthew has interned at WebFX and worked
+                                        Before joining Aspen financial management, Mark has interned at WebFX and worked
                                         at Brainvire Infotech Inc.
                                         He holds a Bachelor’s degree from the Virginia Tech university, Virginia, and a
                                         master’s degree in Digital and project management from the Northern Illinois
                                         University.
                                     </p>
+
                                 </div>
                             </div>
                         </div>

@@ -3,3 +3,43 @@
 Stack trace:
 #0 {main}
   thrown in /home/aspeeguy/public_html/index.php on line 34
+[29-Nov-2023 13:54:10 America/Boise] PHP Warning:  require(/home3/bjhymsmy/kray/vendor/composer/../symfony/polyfill-php80/bootstrap.php): Failed to open stream: No such file or directory in /home3/bjhymsmy/kray/vendor/composer/autoload_real.php on line 41
+[29-Nov-2023 13:54:10 America/Boise] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/bjhymsmy/kray/vendor/composer/../symfony/polyfill-php80/bootstrap.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home3/bjhymsmy/kray/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home3/bjhymsmy/kray/vendor/composer/autoload_real.php(45): {closure}('a4a119a56e50fbb...', '/home3/bjhymsmy...')
+#1 /home3/bjhymsmy/kray/vendor/autoload.php(25): ComposerAutoloaderInit685879dcbe3854b90a45b4287d998266::getLoader()
+#2 /home3/bjhymsmy/kray/artisan(18): require('/home3/bjhymsmy...')
+#3 {main}
+  thrown in /home3/bjhymsmy/kray/vendor/composer/autoload_real.php on line 41
+[29-Nov-2023 14:01:12 America/Boise] PHP Warning:  require(/home3/bjhymsmy/kray/vendor/composer/../symfony/polyfill-php80/bootstrap.php): Failed to open stream: No such file or directory in /home3/bjhymsmy/kray/vendor/composer/autoload_real.php on line 41
+[29-Nov-2023 14:01:12 America/Boise] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/bjhymsmy/kray/vendor/composer/../symfony/polyfill-php80/bootstrap.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home3/bjhymsmy/kray/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home3/bjhymsmy/kray/vendor/composer/autoload_real.php(45): {closure}('a4a119a56e50fbb...', '/home3/bjhymsmy...')
+#1 /home3/bjhymsmy/kray/vendor/autoload.php(25): ComposerAutoloaderInit685879dcbe3854b90a45b4287d998266::getLoader()
+#2 /home3/bjhymsmy/kray/artisan(18): require('/home3/bjhymsmy...')
+#3 {main}
+  thrown in /home3/bjhymsmy/kray/vendor/composer/autoload_real.php on line 41
+[29-Nov-2023 14:02:05 America/Boise] PHP Warning:  require(/home3/bjhymsmy/kray/vendor/composer/../symfony/polyfill-php80/bootstrap.php): Failed to open stream: No such file or directory in /home3/bjhymsmy/kray/vendor/composer/autoload_real.php on line 41
+[29-Nov-2023 14:02:05 America/Boise] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/bjhymsmy/kray/vendor/composer/../symfony/polyfill-php80/bootstrap.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home3/bjhymsmy/kray/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home3/bjhymsmy/kray/vendor/composer/autoload_real.php(45): {closure}('a4a119a56e50fbb...', '/home3/bjhymsmy...')
+#1 /home3/bjhymsmy/kray/vendor/autoload.php(25): ComposerAutoloaderInit685879dcbe3854b90a45b4287d998266::getLoader()
+#2 /home3/bjhymsmy/kray/artisan(18): require('/home3/bjhymsmy...')
+#3 {main}
+  thrown in /home3/bjhymsmy/kray/vendor/composer/autoload_real.php on line 41
+[29-Nov-2023 14:04:41 America/Boise] PHP Warning:  require(/home3/bjhymsmy/kray/vendor/composer/../symfony/polyfill-php80/bootstrap.php): Failed to open stream: No such file or directory in /home3/bjhymsmy/kray/vendor/composer/autoload_real.php on line 41
+[29-Nov-2023 14:04:41 America/Boise] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/bjhymsmy/kray/vendor/composer/../symfony/polyfill-php80/bootstrap.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home3/bjhymsmy/kray/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home3/bjhymsmy/kray/vendor/composer/autoload_real.php(45): {closure}('a4a119a56e50fbb...', '/home3/bjhymsmy...')
+#1 /home3/bjhymsmy/kray/vendor/autoload.php(25): ComposerAutoloaderInit685879dcbe3854b90a45b4287d998266::getLoader()
+#2 /home3/bjhymsmy/kray/artisan(18): require('/home3/bjhymsmy...')
+#3 {main}
+  thrown in /home3/bjhymsmy/kray/vendor/composer/autoload_real.php on line 41
+[29-Nov-2023 14:04:49 America/Boise] PHP Warning:  require(/home3/bjhymsmy/kray/vendor/composer/../symfony/polyfill-php80/bootstrap.php): Failed to open stream: No such file or directory in /home3/bjhymsmy/kray/vendor/composer/autoload_real.php on line 41
+[29-Nov-2023 14:04:49 America/Boise] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/bjhymsmy/kray/vendor/composer/../symfony/polyfill-php80/bootstrap.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home3/bjhymsmy/kray/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home3/bjhymsmy/kray/vendor/composer/autoload_real.php(45): {closure}('a4a119a56e50fbb...', '/home3/bjhymsmy...')
+#1 /home3/bjhymsmy/kray/vendor/autoload.php(25): ComposerAutoloaderInit685879dcbe3854b90a45b4287d998266::getLoader()
+#2 /home3/bjhymsmy/kray/artisan(18): require('/home3/bjhymsmy...')
+#3 {main}
+  thrown in /home3/bjhymsmy/kray/vendor/composer/autoload_real.php on line 41

@@ -23,6 +23,7 @@ use App\Models\Testimonial;
 use App\Models\KycFile;
 use Carbon\Carbon;
 use App\Models\referralpercent;
+use App\Models\Post;
 use Hash;
 
 use PhpParser\Node\Stmt\Foreach_;
@@ -31,7 +32,7 @@ class adminController extends Controller
 {
 
 
-    public  $website = "info@aspen-fm.com";
+    public  $website = "info@aspenfinancialmanagement.com";
 
     public function __construct()
     {
@@ -146,6 +147,7 @@ class adminController extends Controller
         $withdrawal_pending = Withdrawal::where("status", 0)->get();
         $withdrawal_completed = Withdrawal::where("status", 1)->get();
         $funds_all = Fund::all();
+        $posts = Post::all();
 
         $payments = Sitesetting::where('id', 1)->first();
 
@@ -162,9 +164,65 @@ class adminController extends Controller
         $data["withdrawal_pending"] = $withdrawal_pending;
         $data["withdrawal_completed"] = $withdrawal_completed;
         $data["funds_all"] = $funds_all;
+        $data["posts"] = $posts;
+        
 
         return view("admin.adminindex", $data);
     }
+    
+        
+        
+    // <!-- BLOG FUNCTIONS -->
+    
+    
+    
+    // app/Http/Controllers/PageController.php
+    
+    
+    public function storepost(Request $request)
+    {
+        $request->validate([
+            'heading' => 'required|string',
+            'content' => 'required|string',
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+    
+        $imagePath = null;
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('images', 'public');
+        }
+        
+    
+        Post::create([
+            'heading' => $request->input('heading'),
+            'content' => $request->input('content'),
+            'image' => $imagePath,
+        ]);
+    
+        return back()->with('success', 'Post created successfully!');
+    }
+    
+    public function destroypost(Request $request)
+        {
+            $id = $request->id;
+            $post = Post::findOrFail($id);
+    
+            if ($post->delete()) {
+                return back()->with("success", "Post deleted successfully");
+            } else {
+                return back()->with("error", "Failed to delete post");
+            }
+    
+        }
+    
+       
+    
+    
+    
+    
+    // <!-- BLOG END -->
+    
+
 
     public function updateUserProfit() 
     {
@@ -172,6 +230,8 @@ class adminController extends Controller
         $funds = Fund::all();
         // get your investment plans
         $allplan = Investmentplan::all();
+        
+        // dd($allplan);
         
         foreach ($funds as $fund) {
             if ($fund->balance >= 1000 && $fund->balance <= 999999) {
@@ -903,6 +963,9 @@ class adminController extends Controller
         $maximum = $req->maximum;
         $minimum = $req->minimum;
         $adminmessage = $req->adminmessage;
+        $notifications = $req->notifications;
+        $status = $req->status;
+         
 
                 $user = User::where('id',$id )->first();
                 $fund = Fund::where('userid', $id )->first();
@@ -912,6 +975,8 @@ class adminController extends Controller
                 $fund->withdrawal_maximum = $maximum;
                 $fund->withdrawal_minimum = $minimum;
                 $user->adminmessage = $adminmessage;
+                $user->status = $status;
+                $user->notifications = $notifications;
                 $au = $user->save();
                 $fs = $fund->save();
                 if ($au && $fs) {

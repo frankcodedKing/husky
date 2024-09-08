@@ -36,7 +36,7 @@ Plan for the Retirement You’ve Earned</h1>
                 
                 <div class="col-md-6">
                     
-                    <img class="card-img-top" src="assets/images/oldcouple.jpg" alt="financialplanning" style="width:1000px;">
+                    <img class="card-img-top" src="assets/images/oldcouple.jpg" alt="financialplanning" style="width:500px;">
                 </div>
             </div>
             <br>

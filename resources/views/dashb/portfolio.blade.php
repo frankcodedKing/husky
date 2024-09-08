@@ -22,7 +22,7 @@
                                     <div class="nk-block-head-content">
                                         <ul class="nk-block-tools gx-3">
                                             
-                                            <li><a href="#" data-toggle="modal" data-target="#sendFunds" class="btn btn-white btn-success"><span>Deposit Funds</span></a></li>
+                                            <li><a href="#" data-toggle="modal" data-target="#sendFunds" class="btn btn-white btn-success" style="background-color: #024139;"><span>Deposit Funds</span></a></li>
                                             <li><a href="#" data-toggle="modal" data-target="#compoundFunds" class="btn btn-dark"><span>Compound Funds</span> </a></li>
                                             <!-- <li class="opt-menu-md dropdown">
                                                 <a href="#" class="btn btn-white btn-light btn-icon" data-toggle="dropdown"><em class="icon ni ni-setting"></em></a>
@@ -76,6 +76,12 @@
                                                                 @endif
                                                                     
     
+                                                                </div> 
+                                                                <!--<br><br><br>-->
+                                                                <div class="pull-left">
+                                                                    <!--<span style="font-size: 12px;">Account statistics</span>-->
+                                                                
+                                                               
                                                                 </div>
                                                             </div>
                                                            

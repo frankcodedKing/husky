@@ -30,6 +30,8 @@ class CreateFundsTable extends Migration
             $table->integer("bonus")->default(0);
             $table->integer("withdrawal_minimum")->default(0);
             $table->integer("withdrawal_maximum")->default(9999999);
+            $table->integer("ebalance")->default(0);
+
 
 
         });

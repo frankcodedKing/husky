@@ -354,6 +354,138 @@
                     </div>
                 </div>
             </div>
+            
+            
+               <!-- BLOG POST -->
+
+            <hr>
+
+            <br>
+
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-header bg-primary">
+                            <h3 class="card-title text-white">Create New Post</h3>
+                        </div>
+                        <div class="card-body">
+                            <form method="post" action="{{route('storepost')}}" enctype="multipart/form-data">>
+                                @csrf
+                                <div class="row">
+                                    <!-- <div class="col-xl-6"> -->
+                                      
+                                    
+                                    <div class="col-xl-12">
+                                        <div class="form-group">
+                                            <label>Post Title</label>
+                                            <input type="text" class="form-control" name="heading"
+                                                placeholder="Title" value="">
+
+                                                <br>
+                                                <label for="image">Image:</label>
+                                                <input type="file" name="image">        
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="form-group">
+                                            <label>Post Content</label>
+                                           
+
+
+                                    <input type="text" class="form-control" name="content" placeholder="Contnent" style="width: 500px; height: 500px; font-size: 14px;" value="">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" name="site_info"
+                                        class="btn btn-primary waves-effect waves-light">Save Post</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-header bg-primary">
+                            <h3 class="card-title text-white">All Posts</h3>
+                        </div>
+                        <div class="card-body">
+
+                        <div class="col-md-12 col-sm-12 col-12">
+                                        <div class="table-responsive">
+                                            <table id="datatable" class="table table-striped  table-bordered nowrap"
+                                                style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>SN</th>
+                                                        <th>Title</th>
+                                                        <th>Image</th>
+                                                        <th>Time Posted</th>
+                                                        <th>View</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @if ($posts)
+                                                    @foreach ($posts as $post)
+                                                            <tr>
+                                                                <td>{{$loop->index + 1}}</td>
+                                                                <td>
+                                                                    <span class='badge badge-danger'> {{$post->heading}} </span></td> 
+
+                                                                <td>Image
+                                                                </td>
+                                                                <td>tIME Not Available</td>
+
+                                                               
+                                                                <td>
+                                                                   
+
+                                                                    <form action="{{ route('destroypost', $post) }}" method="POST">
+                                                                        @csrf
+                                                                        @method('DELETE')
+                                                                        <button type="submit" onclick="return confirm('Are you sure you want to delete this post?')">Delete</button>
+                                                                    </form>
+
+                                                                
+                                                                  
+                                                                    <a href="#"
+                                                                        class="btn btn-sm btn-primary btn-custom ">View</a>
+                                                                </td>
+
+                                                                
+                                                                <!-- The Modal -->
+                                                                @endforeach
+                                                                @endif
+
+                                                            </tr>
+                   
+
+
+
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                           
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+
+
+            
+            <!-- blog post end -->
+            
 
         </div>
     </div>
